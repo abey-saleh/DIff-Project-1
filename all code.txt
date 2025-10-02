@@ -1,3 +1,79 @@
+/////////////////////////////////////////////////////////////////////
+A code: 
+>> t = linspace(0, 24, 240); y = 75 + 5 .* exp(-t / 4);
+>> w = 75 - 25 * exp(-t / 4);
+>> plot (t,y)
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+plot (t,w, 'r-', 'LineWidth',2);
+grid on
+>> g = 75
+g =
+% time vector from 0 to 20
+75
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+plot (t,w, 'r-', 'LineWidth',2);
+grid on
+g = 75
+g =
+75
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+plot (t,w, 'r-', 'LineWidth',2);
+grid on
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+plot (t,w, 'r-', 'LineWidth',2)
+g = 75
+grid on
+hold off
+g =
+75
+>> plot(g)
+>>
+plot (t,y, 'b-','LineWidth', 2)
+hold on
+plot (t,w, 'r-', 'LineWidth',2)
+plot(g = 75, 'g')
+grid on
+hold off
+Error: Unsupported use of the '=' operator. To compare values for equality, use '=='. To pass name-value
+arguments using the name=value
+format, provide these arguments after all other inputs.
+Related documentation
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+yline(75, 'g-', 'LineWidth', 2);
+plot (t,w, 'r-', 'LineWidth',2)
+grid on
+>> plot (t,y, 'b-','LineWidth', 2)
+hold on
+yline(75, 'g-', 'LineWidth', 2);
+plot (t,w, 'r-', 'LineWidth',2)
+grid on
+>> clearvars
+>> t = linspace(0, 24, 240);
+>> y = 75 - 25 * exp(-t);
+>> w = 75 - 25 * exp(-t / 2);
+>> j = 75 - 25 * exp(-t / 4);
+>> plot (t,y, 'b-', 'LineWidth', 2)
+hold on
+plot (t,w, 'g-', 'LineWidth', 2)
+plot (t,j, 'g-', 'LineWidth', 2)
+grid on
+>> plot (t,y, 'b-', 'LineWidth', 2)
+hold on
+plot (t,w, 'g-', 'LineWidth', 2)
+plot (t,j, 'g-', 'LineWidth', 2)
+grid on
+hold off
+>> plot (t,y, 'b-', 'LineWidth', 2)
+hold on
+plot (t,w, 'g-', 'LineWidth', 2)
+plot (t,j, 'r-', 'LineWidth', 2)
+>>
+/////////////////////////////////////////////////////////////////////
 B code: 
 //////////////////////////////////////////////////////////////
 >> f = @(t,y) 0.25 * (75 - y)
